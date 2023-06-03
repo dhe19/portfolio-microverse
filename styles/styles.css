@@ -1,13 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 @import url("./project.styles.css");
+@import url("./about.styles.css");
 
 :root {
   --first-blue: #6070ff;
   --second-blue: #7f8cff;
   --primary-light: #ebebff;
   --font-poppins: "Poppins", sans-serif;
-  --desktop-title-color: #091e42;
   --primary-dark-color: #172b4d;
+  --desktop-title-color: #091e42;
   --desktop-width: 65vw;
   --desktop-font-size-title: 48px;
   --desktop-font-line-height-title: 60px;
