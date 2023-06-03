@@ -1,99 +1,153 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
-:root{
-    --first-blue: #6070ff;
-    --blue-200: #7f8cff;
-    --blue-500: #396df2;
-    --blue-600: #2230d2;
-    --gray-300: #7a869a;
-    --gray-650: #344563;
-    --primary-light: #ebebff;
-    --primary-dark: #172b4d;
-    --neutral-white: #fff;
-    --neutral-white-off: #dfe1e6;
-    --neutral-white-off-200: #f7f7f9;
-    --font-poppins: "Poppins", sans-serif;
-
-    --primary-desktop-width: 60vw;
+:root {
+  --first-blue: #6070ff;
+  --blue-200: #7f8cff;
+  --blue-500: #396df2;
+  --blue-600: #2230d2;
+  --gray-300: #7a869a;
+  --gray-650: #344563;
+  --primary-light: #ebebff;
+  --primary-dark: #172b4d;
+  --neutral-white: #fff;
+  --neutral-white-off: #dfe1e6;
+  --neutral-white-off-200: #f7f7f9;
+  --font-poppins: "Poppins", sans-serif;
+  --desktop-width: 65vw;
+  --desktop-font-size-title: 48px;
+  --desktop-font-line-height-title: 60px;
+  --desktop-font-size-description: 20px;
+  --desktop-font-line-height-description: 28px;
+  --mobile-font-size-title: 40px;
+  --mobile-font-line-height-title: 52px;
+  --mobile-font-size-description: 16px;
+  --mobile-font-line-height-description: 24px;
+  --mobile-width: 90vw;
 }
 
-
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: var(--font-poppins);
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-poppins);
 }
 
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
 
-a{
-    text-decoration: none;
-    color: black;
-    font-size: 16px;
-    font-weight: 500;
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
 }
 
-header{
-    padding: 0 10px;
-}
-nav{
-    display: flex;
-    width: var(--primary-desktop-width);
-    margin: 0 auto;
-    align-items: center;
-    justify-content: space-between;
-    height: 10vh;
+nav {
+  display: flex;
+  width: var(--mobile-width);
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
 }
 
-main{
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+main {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.logo{
-    font-weight: 700;
-    font-size: 18px;
-    color: var(--first-blue);
+.logo {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--first-blue);
 }
 
-.nav-menu{
+.menu > img {
+  height: 28px;
+}
+
+.nav-menu {
+  display: none;
+}
+
+.nav-item {
+  color: var(--gray-650);
+}
+
+.header {
+  background-image: url("/images/svg/header-bg-mobile.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: var(--mobile-width);
+  margin: 0 auto;
+}
+
+.title {
+  margin: 20px 0;
+  font-size: var(--mobile-font-size-title);
+  font-weight: 700;
+  line-height: var(--mobile-font-line-height-title);
+}
+
+.description {
+  margin: 20px 0;
+  font-size: var(--mobile-font-size-description);
+  line-height: var(--mobile-font-line-height-description);
+  font-weight: 400;
+  color: var(--gray-650);
+}
+
+.connect-button {
+  color: var(--blue-200);
+}
+
+.rrss {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.hover-blue-text:hover {
+  color: var(--first-blue);
+}
+
+@media only screen and (min-width: 768px) {
+  nav {
+    width: var(--desktop-width);
+  }
+
+  .nav-menu {
     display: flex;
     justify-content: space-around;
     gap: 20px;
-}
+  }
 
-.nav-item{
-    color: var(--gray-650);
-}
-.content{
-    width: var(--primary-desktop-width);
-    margin: 0 auto;
-}
-.title{
-    margin: 20px 0;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 60px;
-}
+  .menu {
+    display: none;
+  }
 
-.description{
-    margin: 20px 0;
-    font-size: 20px;
-    line-height: 28px;
-    font-weight: 400;
-    color: var(--gray-650);
-}
-.connect-button{
-    color: var(--blue-200);
-}
-.rrss{
-    margin-top: 15px;
-    display: flex;
-    align-items: center;
-    gap: 15px;
+  .header {
+    background-image: url("/images/svg/header-bg.svg");
+  }
+
+  .container {
+    width: var(--desktop-width);
+  }
+
+  .title {
+    font-size: var(--desktop-font-size-title);
+    line-height: var(--desktop-font-line-height-title);
+  }
+
+  .description {
+    font-size: var(--desktop-font-size-description);
+    line-height: var(--desktop-font-line-height-description);
+  }
 }
