@@ -2,22 +2,16 @@
 
 :root {
   --first-blue: #6070ff;
-  --blue-200: #7f8cff;
-  --blue-500: #396df2;
-  --blue-600: #2230d2;
-  --gray-300: #7a869a;
-  --gray-650: #344563;
+  --second-blue: #7f8cff;
   --primary-light: #ebebff;
-  --primary-dark: #172b4d;
-  --neutral-white: #fff;
-  --neutral-white-off: #dfe1e6;
-  --neutral-white-off-200: #f7f7f9;
   --font-poppins: "Poppins", sans-serif;
+  --desktop-title-color: #091e42;
   --desktop-width: 65vw;
   --desktop-font-size-title: 48px;
   --desktop-font-line-height-title: 60px;
   --desktop-font-size-description: 20px;
   --desktop-font-line-height-description: 28px;
+  --mobile-title-color: #172b4d;
   --mobile-font-size-title: 40px;
   --mobile-font-line-height-title: 52px;
   --mobile-font-size-description: 16px;
@@ -52,13 +46,6 @@ nav {
   height: 10vh;
 }
 
-main {
-  height: 90vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .logo {
   font-weight: 700;
   font-size: 18px;
@@ -77,7 +64,11 @@ main {
   color: var(--gray-650);
 }
 
-.header {
+.hero {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-image: url("../images/svg/header-bg-mobile.svg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -93,6 +84,7 @@ main {
   font-size: var(--mobile-font-size-title);
   font-weight: 700;
   line-height: var(--mobile-font-line-height-title);
+  color: var(--mobile-title-color);
 }
 
 .description {
@@ -103,11 +95,13 @@ main {
   color: var(--gray-650);
 }
 
-.connect-button {
-  color: var(--blue-200);
+.connect {
+  color: var(--second-blue);
+  font-size: 16px;
+  font-weight: 500;
 }
 
-.rrss {
+.social {
   margin-top: 15px;
   display: flex;
   align-items: center;
@@ -133,7 +127,7 @@ main {
     display: none;
   }
 
-  .header {
+  .hero {
     background-image: url("../images/svg/header-bg.svg");
   }
 
@@ -144,6 +138,7 @@ main {
   .title {
     font-size: var(--desktop-font-size-title);
     line-height: var(--desktop-font-line-height-title);
+    color: var(--desktop-title-color);
   }
 
   .description {
