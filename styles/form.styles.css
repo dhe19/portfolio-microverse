@@ -6,6 +6,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top-left-radius: 50px;
 }
 
 .container-form {
@@ -40,4 +43,43 @@
 .container-form > form textarea::placeholder {
   color: #b3bac5;
   padding: 15px;
+}
+
+.container-form > h2, .container-form > p{
+  color: white;
+  font-family: Poppins;
+}
+
+.container-form > p {
+  width: 50%;
+  text-align: center;
+}
+
+.form-ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-ul > li {
+  width: 100%;
+  text-align: center;
+}
+
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 0 auto;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  color: #6070FF;
+  margin-top: 10px;
+}
+
+button:hover {
+  color: white;
+  background-color: var(--second-blue);
+  cursor: pointer;
 }
