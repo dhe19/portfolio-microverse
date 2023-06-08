@@ -70,6 +70,14 @@
   background: var(--primary-light);
   color: var(--first-blue);
   border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.card-tag:hover {
+  transform: scale(1.1);
+  background-color: var(--first-blue);
+  color: white;
 }
 
 .card-actions {
