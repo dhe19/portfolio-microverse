@@ -27,6 +27,7 @@
   height: 220px;
   border-radius: 8px;
   object-fit: cover;
+  transition: all 0.5s ease-in-out;
 }
 
 .card-title {
@@ -86,6 +87,10 @@
   align-items: center;
 }
 
+.card-image:hover {
+  width: 105%;
+}
+
 @media only screen and (min-width: 768px) {
   .projects {
     width: 90vw;
@@ -100,6 +105,7 @@
 
   .card-header {
     margin-right: 22px;
+    overflow: hidden;
   }
 
   .card-image {
