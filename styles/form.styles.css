@@ -1,0 +1,114 @@
+.form-section {
+  height: 120vh;
+  background-color: #6070ff;
+  background-image: url("../images/svg/form-bg-mob.svg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top-left-radius: 100px;
+}
+
+.container-form {
+  width: var(--mobile-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.container-form > form {
+  width: 100%;
+}
+
+.container-form > form input {
+  width: 100%;
+  height: 48px;
+  outline: none;
+  padding-inline-start: 10px;
+  margin: 13.5px 0;
+  border-radius: 8px;
+  border: 1px solid #cfd8dc;
+}
+
+.container-form > form textarea {
+  outline: none;
+  width: 100%;
+  height: 170px;
+  margin-top: 13.5px;
+  resize: none;
+  border-radius: 8px;
+  border: 1px solid #cfd8dc;
+  padding: 15px;
+}
+
+.container-form > form textarea::placeholder {
+  color: #b3bac5;
+}
+
+.container-form > h2 {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+}
+
+.container-form p {
+  color: white;
+  font-size: 18px;
+  font-weight: 300;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 26px;
+}
+
+.form-ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-ul > li {
+  width: 100%;
+  text-align: center;
+}
+
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 0 auto;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  color: #6070ff;
+  margin-top: 10px;
+}
+
+button:hover {
+  color: white;
+  background-color: var(--second-blue);
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .form-section {
+    background-image: url("../images/svg/form-bg.svg");
+  }
+
+  .container-form {
+    width: var(--desktop-width);
+  }
+
+  .container-form > form textarea {
+    border-radius: 0;
+  }
+
+  .container-form > form input {
+    border-radius: 0;
+  }
+}
