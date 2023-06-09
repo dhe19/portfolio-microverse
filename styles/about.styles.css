@@ -82,9 +82,11 @@
     width: 85vw;
     margin: 0 auto;
   }
+
   .skills {
     flex: 0.6;
   }
+
   .me {
     flex: 0.4;
   }
