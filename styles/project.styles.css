@@ -3,6 +3,7 @@
   --second-white: #dfe1e6;
   --primary-gray: #7a869a;
   --second-dark-color: #344563;
+  --dark-blue: #4053fc;
 }
 
 .container-projects {
@@ -20,6 +21,13 @@
   padding: 16px;
   border: 1px solid var(--second-white);
   margin: 44px 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.card:hover {
+  border: var(--first-blue) 2px solid;
+  filter: drop-shadow(0px 48px 48px rgba(37, 47, 137, 0.08));
+  transform: translateY(-5px);
 }
 
 .card-image {
@@ -70,6 +78,16 @@
   background: var(--primary-light);
   color: var(--first-blue);
   border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+li.card-tag:last-child {
+  display: none;
+}
+.card-tag:hover {
+  color: white;
+  background-color: var(--dark-blue);
 }
 
 .card-actions {
@@ -79,12 +97,17 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .container-projects {
+    display: grid;
+  }
   .projects {
     width: 90vw;
     margin: 0 auto;
     padding: 0;
   }
-
+  .card:nth-child(odd) .card-header {
+    order: 1;
+  }
   .card {
     display: flex;
     padding: 24px;
@@ -96,6 +119,10 @@
 
   .card-image {
     height: 448px;
+  }
+
+  .card-content {
+    padding-inline: 10px;
   }
 
   .card-title {
@@ -115,5 +142,9 @@
 
   .card-description {
     font-size: 16px;
+  }
+
+  li.card-tag:last-child {
+    display: block;
   }
 }
