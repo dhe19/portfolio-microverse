@@ -26,7 +26,7 @@
 
 .card:hover {
   border: var(--first-blue) 2px solid;
-  filter: drop-shadow(0px 48px 48px rgba(37, 47, 137, 0.08));
+  filter: drop-shadow(0 48px 48px rgba(37, 47, 137, 0.08));
   transform: translateY(-5px);
 }
 
@@ -85,6 +85,7 @@
 li.card-tag:last-child {
   display: none;
 }
+
 .card-tag:hover {
   color: white;
   background-color: var(--dark-blue);
@@ -100,21 +101,24 @@ li.card-tag:last-child {
   .container-projects {
     display: grid;
   }
+
   .projects {
     width: 90vw;
     margin: 0 auto;
     padding: 0;
   }
-  .card:nth-child(odd) .card-header {
-    order: 1;
-  }
-  .card {
-    display: flex;
-    padding: 24px;
-  }
 
   .card-header {
     margin-right: 22px;
+  }
+
+  .card:nth-child(odd) .card-header {
+    order: 1;
+  }
+
+  .card {
+    display: flex;
+    padding: 24px;
   }
 
   .card-image {

@@ -60,6 +60,7 @@ nav {
 .blank {
   background-color: white;
 }
+
 .logo {
   font-weight: 700;
   font-size: 18px;
@@ -140,7 +141,7 @@ nav {
 .primary-button:hover {
   background-color: var(--dark-blue);
   color: white;
-  box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
 }
 
 @media only screen and (min-width: 768px) {
