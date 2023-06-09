@@ -69,7 +69,6 @@
         </ul>
       </div>
     </section>
-
     <section class="projects">
       <div class="container-projects">
         <!--card one-->
@@ -144,6 +143,7 @@
               <li class="card-tag">HTML</li>
               <li class="card-tag">CSS</li>
               <li class="card-tag">JavaScript</li>
+              <li class="card-tag">Ruby on Rails</li>
             </ul>
             <div class="card-actions">
               <a href="#" class="primary-button">See project</a>
@@ -161,6 +161,7 @@
               <li class="card-client">CANOPY</li>
               <li class="card-info">Back End Dev</li>
               <li class="card-info">2015</li>
+              <li class="card-tag">Ruby on Rails</li>
             </ul>
             <p class="card-description">
               A daily selection of privately personalized reads; no accounts or
@@ -170,6 +171,7 @@
               <li class="card-tag">HTML</li>
               <li class="card-tag">CSS</li>
               <li class="card-tag">JavaScript</li>
+              <li class="card-tag">Ruby on Rails</li>
             </ul>
             <div class="card-actions">
               <a href="#" class="primary-button">See project</a>
@@ -178,121 +180,125 @@
         </article>
       </div>
     </section>
+    <div class="blank">
+      <section class="about">
+        <div class="container-about">
+          <div class="me">
+            <h1 class="title">About Myself</h1>
+            <p class="about-description">
+              Hello I’m a software developer! I can help you build a product ,
+              feature or website Look through some of my work and experience! If
+              you like what you see and have a project you need coded, don’t
+              hesitate to contact me.
+            </p>
+            <h2 class="connect">Let's connect</h2>
+            <ul class="social">
+              <li>
+                <a href="twitter.com"
+                  ><img src="./images/svg/twitter.svg" alt="twitter"
+                /></a>
+              </li>
+              <li>
+                <a href="linkedin.com"
+                  ><img src="./images/svg/Linkedin.svg" alt="LinkedIn"
+                /></a>
+              </li>
+              <li>
+                <a href="https://medium.com"
+                  ><img src="./images/svg/medium.svg" alt="Medium"
+                /></a>
+              </li>
+              <li>
+                <a href="github.com"
+                  ><img src="./images/svg/github.svg" alt="Github"
+                /></a>
+              </li>
+              <li>
+                <a href="angellist.com"
+                  ><img src="./images/svg/angellist.svg" alt="Angel List"
+                /></a>
+              </li>
+            </ul>
+            <div class="about-actions">
+              <a href="#" class="primary-button">Get my resume</a>
+            </div>
+          </div>
+          <div class="skills">
+            <div class="about-title-container">
+              <h3 class="about-skills">Languages</h3>
+              <img src="./images/svg/arrow.svg" />
+            </div>
+            <ul class="about-languages">
+              <li class="about-item">
+                <img src="./images/languages/JS.png" alt="Javascrip" />
+                <span>JavaScript</span>
+              </li>
+              <li class="about-item">
+                <img src="./images/languages/HTML.png" alt="HTML" />
+                <span>HTML</span>
+              </li>
+              <li class="about-item">
+                <img src="./images/languages/CSS.png" alt="CSS" />
+                <span>CSS</span>
+              </li>
+            </ul>
+            <div class="about-title-container border-b">
+              <h3 class="about-skills">Frameworks</h3>
+              <img src="./images/svg/arrow-right.svg" />
+            </div>
+            <div class="about-title-container border-b">
+              <h3 class="about-skills">skills</h3>
+              <img src="./images/svg/arrow-right.svg" />
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <section class="about">
-      <div class="container-about">
-        <div class="me">
-          <h1 class="title">About Myself</h1>
-          <p class="about-description">
-            Hello I’m a software developer! I can help you build a product ,
-            feature or website Look through some of my work and experience! If
-            you like what you see and have a project you need coded, don’t
-            hesitate to contact me.
+      <section class="form-section">
+        <div class="container-form">
+          <h2>Contact Me</h2>
+          <p>
+            If you have an application you are interested in developing, a
+            feature that you need built or a project that needs coding. I’d love
+            to help with it!
           </p>
-          <h2 class="connect">Let's connect</h2>
-          <ul class="social">
-            <li>
-              <a href="twitter.com"
-                ><img src="./images/svg/twitter.svg" alt="twitter"
-              /></a>
-            </li>
-            <li>
-              <a href="linkedin.com"
-                ><img src="./images/svg/Linkedin.svg" alt="LinkedIn"
-              /></a>
-            </li>
-            <li>
-              <a href="https://medium.com"
-                ><img src="./images/svg/medium.svg" alt="Medium"
-              /></a>
-            </li>
-            <li>
-              <a href="github.com"
-                ><img src="./images/svg/github.svg" alt="Github"
-              /></a>
-            </li>
-            <li>
-              <a href="angellist.com"
-                ><img src="./images/svg/angellist.svg" alt="Angel List"
-              /></a>
-            </li>
-          </ul>
-          <div class="about-actions">
-            <a href="#" class="primary-button">Get my resume</a>
-          </div>
+          <form action="https://formspree.io/f/xwkjdrpo" method="post">
+            <ul class="form-ul">
+              <li>
+                <input
+                  type="text"
+                  name="user_name"
+                  id="name"
+                  placeholder="Your name"
+                  maxlength="30"
+                  required
+                />
+              </li>
+              <li>
+                <input
+                  type="email"
+                  name="user_email"
+                  id="email"
+                  placeholder="Your email"
+                  required
+                />
+              </li>
+              <li>
+                <textarea
+                  name="user_message"
+                  id="message"
+                  required
+                  placeholder="Write your message here"
+                  maxlength="500"
+                ></textarea>
+              </li>
+              <li>
+                <button type="submit" class="form-button">Get in touch</button>
+              </li>
+            </ul>
+          </form>
         </div>
-        <div class="skills">
-          <div class="about-title-container">
-            <h3 class="about-skills">Languages</h3>
-            <img src="./images/svg/arrow.svg" />
-          </div>
-          <ul class="about-languages">
-            <li class="about-item">
-              <img src="./images/languages/JS.png" alt="Javascrip" />JavaScript
-            </li>
-            <li class="about-item">
-              <img src="./images/languages/HTML.png" alt="HTML" />HTML
-            </li>
-            <li class="about-item">
-              <img src="./images/languages/CSS.png" alt="CSS" />CSS
-            </li>
-          </ul>
-          <div class="about-title-container border-b">
-            <h3 class="about-skills">Frameworks</h3>
-            <img src="./images/svg/arrow-right.svg" />
-          </div>
-          <div class="about-title-container border-b">
-            <h3 class="about-skills">skills</h3>
-            <img src="./images/svg/arrow-right.svg" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="form-section">
-      <div class="container-form">
-        <h2>Contact Me</h2>
-        <p>
-          If you have an application you are interested in developing, a feature
-          that you need built or a project that needs coding. I’d love to help
-          with it!
-        </p>
-        <form action="https://formspree.io/f/xwkjdrpo" method="post">
-          <ul class="form-ul">
-            <li>
-              <input
-                type="text"
-                name="user_name"
-                id="name"
-                placeholder="Your name"
-                maxlength="30"
-                required
-              />
-            </li>
-            <li>
-              <input
-                type="email"
-                name="user_email"
-                id="email"
-                placeholder="Your email"
-                required
-              />
-            </li>
-            <li>
-              <textarea
-                name="user_message"
-                id="message"
-                required
-                placeholder="Write your message here"
-                maxlength="500"
-              ></textarea>
-            </li>
-            <li>
-              <button type="submit">Get in touch</button>
-            </li>
-          </ul>
-        </form>
-      </div>
-    </section>
+      </section>
+    </div>
   </body>
 </html>

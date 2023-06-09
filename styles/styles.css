@@ -57,6 +57,10 @@ nav {
   height: 10vh;
 }
 
+.blank {
+  background-color: white;
+}
+
 .logo {
   font-weight: 700;
   font-size: 18px;
@@ -85,6 +89,7 @@ nav {
   background-repeat: no-repeat;
   background-color: white;
   border-bottom-left-radius: 100px;
+  margin-bottom: 142px;
 }
 
 .container {
@@ -130,11 +135,13 @@ nav {
   border: 1px solid #6070ff;
   padding: 12px;
   border-radius: 8px;
+  transition: all 0.5s ease-in-out;
 }
 
 .primary-button:hover {
-  background-color: #6070ff;
+  background-color: var(--dark-blue);
   color: white;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
 }
 
 @media only screen and (min-width: 768px) {
