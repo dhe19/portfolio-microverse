@@ -112,7 +112,7 @@ li.card-tag:last-child {
     margin-right: 22px;
   }
 
-  .card:nth-child(odd) .card-header {
+  .card:nth-child(even) .card-header {
     order: 1;
   }
 
