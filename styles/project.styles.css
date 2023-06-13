@@ -25,7 +25,7 @@
 }
 
 .card:hover {
-  border: var(--first-blue) 2px solid;
+  border: var(--third-blue) 2px solid;
   filter: drop-shadow(0 48px 48px rgba(37, 47, 137, 0.08));
   transform: translateY(-5px);
 }
@@ -69,6 +69,7 @@
 
 .card-tags-container {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   margin-bottom: 24px;
 }
@@ -82,9 +83,9 @@
   transition: all 0.5s ease-in-out;
 }
 
-li.card-tag:last-child {
+/* li.card-tag:last-child {
   display: none;
-}
+} */
 
 .card-tag:hover {
   color: white;
@@ -148,7 +149,7 @@ li.card-tag:last-child {
     font-size: 16px;
   }
 
-  li.card-tag:last-child {
+  /*   li.card-tag:last-child {
     display: block;
-  }
+  }*/
 }
