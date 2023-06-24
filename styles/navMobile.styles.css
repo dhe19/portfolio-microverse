@@ -1,0 +1,57 @@
+.nav-mobile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #6070ff;
+  mix-blend-mode: multiply;
+  backdrop-filter: blur(6px);
+  flex-direction: column;
+  color: white;
+  padding: 50px 0 0 28px;
+  z-index: 40;
+  animation: blurred 0.5s ease-in-out;
+}
+
+.nav-mobile .nav-item {
+  margin-bottom: 20px;
+}
+
+.nav-mobile .nav-item > a {
+  color: white !important;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.close-menu-btn {
+  display: inline;
+}
+
+.close-menu-btn > img {
+  width: 20px;
+  color: white !important;
+  animation: moveit 0.65s ease-in-out forwards;
+}
+
+@keyframes blurred {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes moveit {
+  from {
+    opacity: 0;
+    transform: translateX(0%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(75vw);
+  }
+}
