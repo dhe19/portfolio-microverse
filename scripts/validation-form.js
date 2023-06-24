@@ -1,4 +1,5 @@
-import { email, form, submitBtn } from "./formConstants.js";
+import { email, form, submitBtn } from './formConstants.js';
+
 let inserted = false;
 
 const errorMessage = (message) => {
