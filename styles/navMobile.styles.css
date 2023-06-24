@@ -17,6 +17,7 @@
 .nav-mobile .nav-item {
   margin-bottom: 20px;
 }
+
 .nav-mobile .nav-item > a {
   color: white !important;
   font-size: 32px;
@@ -37,15 +38,18 @@
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
 }
+
 @keyframes moveit {
   from {
     opacity: 0;
     transform: translateX(0%);
   }
+
   to {
     opacity: 1;
     transform: translateX(75vw);
