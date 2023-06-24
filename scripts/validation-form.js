@@ -1,6 +1,4 @@
-const form = document.getElementById('contact-form');
-const email = document.getElementById('email');
-const submitBtn = document.getElementById('submit-btn');
+import { email, form, submitBtn } from "./formConstants.js";
 let inserted = false;
 
 const errorMessage = (message) => {
