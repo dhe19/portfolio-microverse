@@ -4,24 +4,18 @@ const submitBtn = document.getElementById('submit-btn');
 let inserted = false;
 
 const errorMessage = (message) => {
-    const error = document.createElement('p');
-    error.textContent = message;
-    if (!inserted)
-        submitBtn.insertAdjacentElement('beforebegin', error);
-    inserted = true;
-}
+  const error = document.createElement('p');
+  error.textContent = message;
+  if (!inserted) { submitBtn.insertAdjacentElement('beforebegin', error); }
+  inserted = true;
+};
 
 form.onsubmit = (event) => {
+  event.preventDefault();
 
-    event.preventDefault();
-
-    if (email.value !== email.value.toLowerCase()) {
-        errorMessage("Email must be in lower case")
-    }
-
-    else {
-        form.submit();
-    }
-}
-
-
+  if (email.value !== email.value.toLowerCase()) {
+    errorMessage('Email must be in lower case');
+  } else {
+    form.submit();
+  }
+};
