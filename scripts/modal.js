@@ -48,12 +48,12 @@ const openModal = (id) => {
 
           <div class="modal-actions">
             <a href="#" class="secondary-button">
-              Open live
-              <img src="./images/svg/icon-github.svg" alt="" />
+              See source
+              <img src="./images/svg/icon-github.svg" alt="github" />
             </a>
             <a href="#" class="secondary-button">
-              See source
-              <img src="./images/svg/icon-open.svg" alt="" />
+              See live
+              <img src="./images/svg/icon-open.svg" alt="live" />
             </a>
           </div>
         </div>
