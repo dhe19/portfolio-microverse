@@ -1,29 +1,27 @@
-import { projectsData } from "./utils/data.mjs";
+import { projectsData } from './utils/data.js';
 // se encargara de todos los mostrar un modal
-const modalContainer = document.getElementById("modal-container");
+const modalContainer = document.getElementById('modal-container');
 let modal;
-const closeButton = document.createElement("img")
+const closeButton = document.createElement('img');
 closeButton.className = 'modal-close';
-closeButton.src = "images/svg/Icon-Cancel.svg"
-closeButton.alt = "close"
+closeButton.src = 'images/svg/Icon-Cancel.svg';
+closeButton.alt = 'close';
+
+const closeModal = () => {
+  modal.classList.toggle('d-none');
+  document.body.style.overflow = 'auto';
+};
+
 closeButton.onclick = () => closeModal();
 
+const openModal = (id) => {
+  // require data info
+  const projectInfo = projectsData.find((e) => e.id === id);
 
-// activar el modal
-// mostrar toda la información del projecto selecionado
-// desactivar el modal cunado se haga click en el botón close
+  modal = modal || modalContainer.querySelector('article');
 
-//mostrar el modal
-export const openModal = (id) => {
-  //require data info
-  const projectInfo = projectsData.find(e => e.id === id)
-
-  if (modal === undefined)
-    modal = modalContainer.getElementsByTagName('article')[0];
-
-  modal.style.top = window.pageYOffset + 'px';
-  document.body.style.overflow = "hidden"
-
+  modal.style.top = `${window.pageYOffset}px`;
+  document.body.style.overflow = 'hidden';
 
   modal.innerHTML = ` 
     <div class="blur"></div>
@@ -45,7 +43,7 @@ export const openModal = (id) => {
         </p>
         <div class="modal-info">
           <ul class="modal-tags-container">
-            ${projectInfo.tags.map(e => `<li class="card-tag">${e}</li>`).join(' ')}
+            ${projectInfo.tags.map((e) => `<li class="card-tag">${e}</li>`).join(' ')}
           </ul>
 
           <div class="modal-actions">
@@ -61,15 +59,9 @@ export const openModal = (id) => {
         </div>
       </div>
     </div>
-    `
-  console.log(modal.getElementsByTagName('header')[0].appendChild(closeButton));
+    `;
+  modal.querySelector('header').appendChild(closeButton);
   modal.classList.toggle('d-none');
+};
 
-}
-
-const closeModal = () => {
-  modal.classList.toggle('d-none');
-  document.body.style.overflow = "auto"
-
-}
-
+export default openModal;
