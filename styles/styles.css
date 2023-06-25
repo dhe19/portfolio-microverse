@@ -3,6 +3,7 @@
 @import url("./about.styles.css");
 @import url("./form.styles.css");
 @import url("./navMobile.styles.css");
+@import url("./modal.styles.css");
 
 :root {
   --first-blue: #6070ff;
@@ -80,6 +81,10 @@ nav {
 
 .none {
   visibility: hidden;
+}
+
+.d-none {
+  display: none;
 }
 
 .nav-item {
